@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import Welcome from "../welcome/welcome";
+import Dashobard from "../layouts/Dashboard";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -10,6 +10,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 
-export default function Home() {
-  return <Welcome />;
+export default function Dashboard() {
+  return <Dashobard />;
 }
