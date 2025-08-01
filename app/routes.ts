@@ -6,4 +6,7 @@ export default [
   route("portfolio", "routes/portfolio.tsx"),
   route("construction", "routes/investment.tsx"),
   route("detail-invesment/:id", "routes/detailinvestment.tsx"),
+  route("rental", "routes/rental.tsx"),
+  route("market", "routes/market.tsx"),
+  route("partners", "routes/partners.tsx"),
 ] satisfies RouteConfig;

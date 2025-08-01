@@ -24,6 +24,7 @@
     "react-router": "^7.7.1",
     "react-slick": "^0.30.3",
     "react-toastify": "^11.0.5",
+    "recharts": "^3.1.0",
     "slick-carousel": "^1.8.1",
     "wagmi": "^2.16.0",
     "web3modal": "^1.9.12"
