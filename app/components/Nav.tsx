@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 import { FiHome, FiBriefcase, FiTool, FiKey, FiUsers, FiShare2 } from 'react-icons/fi';
 
 const navItems = [
-  { label: 'Home', icon: <FiHome />, to: '/' },
+  { label: 'Home', icon: <FiHome />, to: '/dashboard' },
   { label: 'Portfolio', icon: <FiBriefcase />, to: '/portfolio' },
   { label: 'Construction', icon: <FiTool />, to: '/construction' },
   { label: 'Rental', icon: <FiKey />, to: '/rental' },

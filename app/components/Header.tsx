@@ -2,11 +2,11 @@ import { useState } from "react";
 import { NavLink } from "react-router";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FiHome, FiBriefcase, FiTool, FiKey, FiUsers, FiShare2 } from 'react-icons/fi';
-import logo from '../welcome/logo-landify.png';
+import logo from '/spiner.png?url';
 import '../src/index.css';
 
 const navItems = [
-  { label: 'Home', icon: <FiHome />, to: '/' },
+  { label: 'Home', icon: <FiHome />, to: '/dashboard' },
   { label: 'Portfolio', icon: <FiBriefcase />, to: '/portfolio' },
   { label: 'Construction', icon: <FiTool />, to: '/construction' },
   { label: 'Rental', icon: <FiKey />, to: '/rental' },

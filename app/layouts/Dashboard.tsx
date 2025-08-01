@@ -18,6 +18,7 @@ type RealEstate = {
   investors: number;
   profitDistribution: string;
   sold:boolean;
+  progress:number;
 };
 
 const initialData: RealEstate[] = [
@@ -35,6 +36,7 @@ const initialData: RealEstate[] = [
     sold: true,
     investors: 100,
     profitDistribution: 'Q4 2025',
+    progress: 100,
   },
   {
     id: 2,
@@ -50,6 +52,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: true,
+    progress: 100,
   },
   {
     id: 3,
@@ -65,6 +68,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: false,
+    progress: 65,
   },
   {
     id: 4,
@@ -80,6 +84,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: false,
+    progress: 50,
   },
   {
     id: 5,
@@ -95,6 +100,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q2 2026',
     sold: false,
+    progress: 70,
   },
   {
     id: 6,
@@ -110,6 +116,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: false,
+    progress: 80,
   },
   {
     id: 7,
@@ -125,6 +132,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q2 2026',
     sold: false,
+    progress: 25,
   },
   {
     id: 8,
@@ -140,6 +148,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: false,
+    progress: 45,
   },
   {
     id: 9,
@@ -155,6 +164,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q2 2026',
     sold: false,
+    progress: 35,
   },
   {
     id: 10,
@@ -170,6 +180,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: false,
+    progress: 40,
   },
   {
     id: 11,
@@ -185,6 +196,7 @@ const initialData: RealEstate[] = [
     investors: 100,
     profitDistribution: 'Q4 2025',
     sold: false,
+    progress: 15,
   },
 ];
 
@@ -330,6 +342,7 @@ export default function Dashboard() {
                         <div className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-xs px-2 py-1 rounded">
                         Profit distribution {item.profitDistribution}
                         </div>
+                        
                     </div>
 
                     {/* Content Section */}

@@ -21,7 +21,7 @@ export default function Footer() {
 
         {/* Kanan: Link Navigasi */}
         <div className="md:pl-12">
-          <h3 className="text-lg font-semibold mb-4">Informasi</h3>
+          <h3 className="text-lg font-semibold mb-4">Information</h3>
           <ul className="space-y-2 text-sm">
             <li><NavLink to="/contact" className="hover:underline">Contact Us</NavLink></li>
             <li><NavLink to="/privacy-policy" className="hover:underline">Privacy Policy</NavLink></li>
