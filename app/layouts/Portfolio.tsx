@@ -118,23 +118,24 @@ export default function Portfolio() {
           {/* Right Panel */}
           <div>
             {/* Filters */}
-            <div className="flex flex-wrap gap-4 mb-6">
+            <h3 className='text-gray-600 font-semibold mb-6'>Your Properties</h3>
+            <div className="bg-white p-6 rounded-xl shadow-md border border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6 mb-8">
               <input
                 type="date"
-                className="border px-3 py-2 rounded text-sm w-full sm:w-auto"
+                className="border px-3 py-2 rounded text-sm w-full sm:w-auto bg-gray-400"
                 value={fromDate}
                 onChange={(e) => setFromDate(e.target.value)}
                 placeholder="From"
               />
               <input
                 type="date"
-                className="border px-3 py-2 rounded text-sm w-full sm:w-auto"
+                className="border px-3 py-2 rounded text-sm w-full sm:w-auto bg-gray-400"
                 value={toDate}
                 onChange={(e) => setToDate(e.target.value)}
                 placeholder="To"
               />
               <select
-                className="border px-3 py-2 rounded text-sm w-full sm:w-auto"
+                className="border px-3 py-2 rounded text-sm w-full sm:w-auto bg-gray-400"
                 onChange={(e) => setLocation(e.target.value as any)}
               >
                 <option value="All">All Locations</option>
@@ -142,7 +143,7 @@ export default function Portfolio() {
                 <option value="Canggu">Canggu</option>
               </select>
               <select
-                className="border px-3 py-2 rounded text-sm w-full sm:w-auto"
+                className="border px-3 py-2 rounded text-sm w-full sm:w-auto bg-gray-400"
                 onChange={(e) => setFilter(e.target.value as any)}
               >
                 <option value="All">All</option>
@@ -151,7 +152,7 @@ export default function Portfolio() {
               </select>
             </div>
             {/* Property Cards */}
-            <h3 className='text-gray-600 font-semibold mb-6'>Your Properties</h3>
+            
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             
             {filteredProperties.length === 0 ? (
